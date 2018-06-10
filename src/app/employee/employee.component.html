@@ -1,0 +1,24 @@
+<h2> Employee Details</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="hidden">Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Phone</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td class="hidden">{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.surname}}</td>
+            <td>{{employee.phone}}</td>
+            <td>
+                <a [routerLink]="['/update', employee.id]" class="btn btn-info">Update</a> &nbsp;
+                <button class="btn btn-danger" (click)="deleteEmployee(employee)"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
