@@ -5,9 +5,20 @@ CRUD Web Application Example built using Angular, Bootstrap, RESTful
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-## First Step
+## Installation<a name="installation"></a>
 
 Make sure you have [Rest Api Project](https://github.com/bizarrecode/rest-api) installed.
+
+1. Clone or Download the repository
+
+	```
+	$ git clone https://github.com/bizarrecode/angular-crud-rest-api.git
+	$ cd angular-crud-rest-api
+	```
+2. Install Dependencies
+
+	```
+	$ npm install
 
 ## Development server
 
